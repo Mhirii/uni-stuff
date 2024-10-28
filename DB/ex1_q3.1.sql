@@ -35,8 +35,8 @@ CREATE TABLE IF NOT EXISTS Technician (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     addrId INT,
-    telNumber VARCHAR(255),
-    salary FLOAT,
+    telNumber VARCHAR(255) NOT NULL,
+    salary FLOAT NOT NULL,
     FOREIGN KEY (addrId) REFERENCES Address(id)
 );
 
@@ -54,8 +54,8 @@ CREATE TABLE IF NOT EXISTS Pilot (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     addrId INT,
-    telNumber VARCHAR(255),
-    salary FLOAT,
+    telNumber VARCHAR(255) NOT NULL,
+    salary FLOAT NOT NULL,
     FOREIGN KEY (addrId) REFERENCES Address(id)
 );
 
