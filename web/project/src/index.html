@@ -51,23 +51,30 @@
 
 	<main>
 		<!-- Hero Section -->
-		<section id="home" class="hero lunar-hero py-5">
-			<div class="container">
-				<div class="row align-items-center">
+		<section id="home" class="hero lunar-hero min-vh-100 d-flex align-items-center">
+			<div class="container py-5">
+				<div class="row align-items-center gy-5">
 					<div class="col-lg-6">
-						<h1 class="display-4 fw-bold mb-4 hero-title">Cloud Made Simple</h1>
-						<p class="lead mb-4 hero-text">Deploy and scale your applications with our reliable cloud platform. From
-							databases to
-							kubernetes, we've got you covered.</p>
-						<button href="#contact" class="  me-3 btn-lunar-cta">
-							<span>Start Free Trial</span>
-						</button>
-						<button href="#services" class="  btn-lunar-secondary">
-							<span>View Products</span>
-						</button>
+						<div class="hero-content pe-lg-5">
+							<h1 class="display-3 fw-bold mb-4 hero-title animated-text">Cloud Made Simple</h1>
+							<p class="lead mb-4 hero-text">Deploy and scale your applications with our reliable cloud platform. From
+								databases to kubernetes, we've got you covered.</p>
+							<div class="hero-buttons">
+								<a href="#contact" class="btn-lunar-cta me-3 mb-2 mb-sm-0">
+									<span>Start Free Trial</span>
+								</a>
+								<a href="#services" class="btn-lunar-secondary">
+									<span>View Products</span>
+								</a>
+							</div>
+						</div>
 					</div>
 					<div class="col-lg-6">
-						<img src="../assets/cloud2.webp" alt="Cloud Dashboard" class="img-fluid rounded-3 hero-image">
+						<div class="hero-image-wrapper position-relative">
+							<img src="../assets/cloud2.webp" alt="Cloud Dashboard" class="img-fluid rounded-4 hero-image"
+								style="border: none;">
+							<div class="hero-image-glow"></div>
+						</div>
 					</div>
 				</div>
 			</div>
