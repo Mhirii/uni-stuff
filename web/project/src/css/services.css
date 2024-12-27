@@ -1,0 +1,114 @@
+.services-section {
+	background: linear-gradient(135deg, #0a1221 0%, #1a2333 100%);
+	position: relative;
+	overflow: hidden;
+	color: #fff;
+}
+
+.services-section::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background:
+		radial-gradient(circle at 20% 20%, rgba(79, 172, 254, 0.1) 0%, transparent 25%),
+		radial-gradient(circle at 80% 80%, rgba(0, 242, 254, 0.1) 0%, transparent 25%);
+	pointer-events: none;
+}
+
+.lunar-subtitle {
+	color: #4facfe;
+	font-size: 0.9rem;
+	font-weight: 600;
+	letter-spacing: 2px;
+	opacity: 0.9;
+}
+
+.lunar-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	background: linear-gradient(to right, #fff, #e1e1e1);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+.lunar-description {
+	color: rgba(255, 255, 255, 0.7);
+	max-width: 600px;
+	font-size: 1.1rem;
+	line-height: 1.6;
+}
+
+.service-card {
+	background: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(255, 255, 255, 0.05);
+	border-radius: 1rem;
+	backdrop-filter: blur(10px);
+	transition: all 0.3s ease;
+	position: relative;
+	overflow: hidden;
+}
+
+.service-card::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+}
+
+.service-card:hover {
+	transform: translateY(-5px);
+	background: rgba(255, 255, 255, 0.05);
+	border-color: rgba(255, 255, 255, 0.1);
+}
+
+.card-body {
+	padding: 1.5rem;
+}
+
+.card-title {
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	font-size: 1.25rem;
+}
+
+.card-text {
+	color: rgba(255, 255, 255, 0.7);
+	line-height: 1.6;
+	margin-bottom: 0;
+}
+
+.card-text {
+	color: rgba(255, 255, 255, 0.7);
+	line-height: 1.6;
+	margin-bottom: 1rem;
+}
+
+.service-card-img {
+	object-fit: cover;
+	border-radius: 1rem 0 0 1rem;
+}
+
+.btn-lunar-learn-more {
+	background: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	color: #4facfe;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	transition: all 0.3s ease;
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+
+.btn-lunar-learn-more:hover {
+	background: rgba(79, 172, 254, 0.1);
+	border-color: #4facfe;
+	transform: translateX(5px);
+}

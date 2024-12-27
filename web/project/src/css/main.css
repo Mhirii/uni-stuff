@@ -1,0 +1,223 @@
+@import "https://fonts.googleapis.com/css2?family=Megrim&family=Questrial&family=Inter&display=swap";
+@import "./services.css";
+
+* {
+	font-family: "Inter", serif;
+
+}
+
+.service-card {
+
+	font-family: __Inter_1fc7a2, sans-serif;
+	line-height: 1.4;
+	margin: 0;
+	align-items: flex-start;
+	border-radius: 16px;
+	box-shadow: rgba(17, 25, 46, 0.1) 0px 0px 0px 2px inset;
+	background: rgb(249, 250, 254);
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	height: 100%;
+	padding: 32px 32px 40px;
+
+}
+
+.logo-png {}
+
+.logo-text {
+	color: rgb(55, 65, 81);
+	font-weight: 500;
+	font-style: normal;
+	font-size: 18pt;
+	line-height: 1.25;
+	letter-spacing: -0.025em;
+}
+
+.font-normal {
+	font-family: "Questrial", serif;
+}
+
+.font-title {
+	font-family: "Questrial", serif;
+}
+
+.text-title {
+	font-weight: 600;
+	font-style: normal;
+}
+
+.text-normal {
+	font-weight: 400;
+	font-style: normal;
+}
+
+.text-detail {
+	font-weight: 300;
+	font-style: normal;
+}
+
+.lunar-nav {
+	background: linear-gradient(to right, rgba(13, 17, 23, 0.95), rgba(23, 32, 46, 0.95));
+	backdrop-filter: blur(10px);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.moon-glow {
+	color: #fff;
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+	letter-spacing: 1px;
+}
+
+.navbar .nav-link {
+	color: rgba(255, 255, 255, 0.7) !important;
+	font-weight: 500;
+	padding: 0.5rem 1rem;
+	transition: all 0.3s ease;
+	opacity: 0.8;
+}
+
+.navbar .nav-link:hover {
+	color: #fff !important;
+	opacity: 1;
+	transform: translateY(-2px);
+}
+
+.navbar .nav-link.active {
+	color: #fff !important;
+	opacity: 1;
+}
+
+.navbar-toggler {
+	border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler:focus {
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.lunar-hero {
+	background: linear-gradient(135deg, #0a1221 0%, #1a2333 100%);
+	position: relative;
+	overflow: hidden;
+	color: #fff;
+}
+
+.lunar-hero::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.1) 0%, transparent 60%);
+	pointer-events: none;
+}
+
+.hero-title {
+	text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+	background: linear-gradient(to right, #fff, #e1e1e1);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+.hero-text {
+	color: rgba(255, 255, 255, 0.8);
+	font-weight: 300;
+}
+
+@keyframes gradientShift {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.btn-lunar-cta {
+	background: linear-gradient(135deg, #4facfe80 0%, #00f2fef0 50%, #4facfe80 100%);
+	background-size: 200% 200%;
+	color: #fff;
+	border: none;
+	padding: 0.8rem 2rem;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease;
+	font-weight: 500;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	border-radius: 1rem;
+}
+
+.btn-lunar-cta:hover {
+	transform: translateY(-2px);
+	color: #fff;
+	box-shadow: 0 6px 20px rgba(79, 172, 254, 0.3);
+	animation: gradientShift 2s ease;
+}
+
+.btn-lunar-cta:active {
+	transform: translateY(1px);
+}
+
+.btn-lunar-secondary {
+	background: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	color: #fff;
+	padding: 0.8rem 2rem;
+	backdrop-filter: blur(5px);
+	transition: all 0.3s ease;
+	font-weight: 500;
+	border-radius: 1rem;
+}
+
+.btn-lunar-secondary:hover {
+	background: rgba(255, 255, 255, 0.15);
+	border-color: rgba(255, 255, 255, 0.3);
+	color: #fff;
+	transform: translateY(-2px);
+}
+
+.btn-lunar-secondary:active {
+	transform: translateY(1px);
+}
+
+/* Remove paragraph margins inside buttons */
+.btn-lunar-cta span,
+.btn-lunar-secondary span {
+	margin: 0;
+}
+
+.service-card-img {
+	width: 100%;
+	height: auto;
+	max-height: 200px;
+	object-fit: contain;
+	background: transparent;
+	padding: 1rem;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@media screen and (max-width: 768px) {
+	.service-card-img {
+		max-height: 150px;
+		padding: 0.5rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.service-card-img {
+		max-height: 120px;
+		padding: 0.25rem;
+	}
+}
