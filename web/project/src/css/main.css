@@ -23,6 +23,9 @@
 	--color-black-20: rgba(0, 0, 0, 0.2);
 	--color-black-30: rgba(0, 0, 0, 0.3);
 
+	--color-title-accent-1: #4facfeb0;
+	--color-title-accent-2: #00f2feb0;
+
 	--color-accent-glow-1: rgba(79, 172, 254, 0.15);
 	--color-accent-glow-2: rgba(0, 242, 254, 0.15);
 	--color-accent-glow-3: rgba(0, 242, 254, 0.25);
@@ -122,9 +125,10 @@
 	box-shadow: 0 0 10px var(--color-transparent-white-20);
 }
 
+/* Hero section */
 .lunar-hero {
 	position: relative;
-	background: linear-gradient(180deg, var(--bs-dark) 0%, #0a0c0f 100%);
+	background: linear-gradient(180deg, var(--color-dark-3) 0%, var(--color-dark-4) 100%);
 	overflow: hidden;
 }
 
@@ -135,8 +139,12 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: radial-gradient(circle at 30% 50%, rgba(99, 102, 241, 0.08) 0%, transparent 50%);
+	background:
+		radial-gradient(circle at 20% 20%, var(--color-accent-glow-1) 0%, transparent 35%),
+		radial-gradient(circle at 80% 80%, var(--color-accent-glow-2) 0%, transparent 35%),
+		radial-gradient(circle at 50% 50%, var(--color-white-glow) 0%, transparent 50%);
 	pointer-events: none;
+	animation: spaceGlow 15s ease-in-out infinite;
 }
 
 .hero-title {
@@ -153,7 +161,6 @@
 	font-size: clamp(1.1rem, 2vw, 1.25rem);
 	max-width: 540px;
 }
-
 
 .hero-content {
 	position: relative;
@@ -183,6 +190,7 @@
 
 .hero-image {
 	border: 1px solid rgba(255, 255, 255, 0.1);
+	filter: saturate(0.8) brightness(0.94);
 }
 
 .hero-image-glow {
@@ -191,7 +199,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+	background: radial-gradient(circle at 50% 50%, var(--color-accent-glow-1) 0%, transparent 70%);
 	filter: blur(20px);
 	z-index: -1;
 }
@@ -240,6 +248,10 @@
 	border-radius: 1rem;
 }
 
+.btn-lunar-cta * {
+	text-decoration: none;
+}
+
 .btn-lunar-cta:hover {
 	transform: translateY(-2px);
 	color: var(--color-white);
@@ -273,14 +285,7 @@
 	transform: translateY(1px);
 }
 
-/* Remove paragraph margins inside buttons */
-.btn-lunar-cta span,
-.btn-lunar-secondary span {
-	margin: 0;
-}
-
 /* Services section */
-
 .services-section {
 	background: linear-gradient(135deg, var(--color-dark-3) 0%, var(--color-dark-4) 100%);
 	position: relative;
@@ -469,4 +474,95 @@
 .lunar-footer .lunar-link:hover {
 	color: var(--color-white);
 	text-shadow: 0 0 10px var(--color-transparent-white-30);
+}
+
+/* Lunar Title Styles */
+.lunar-title {
+	background: linear-gradient(90deg, var(--color-white) 0%, var(--color-light-gray) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 2.5rem;
+	font-weight: 600;
+	margin-bottom: 1.5rem;
+	letter-spacing: 0.5px;
+	text-shadow: 0 0 20px var(--color-transparent-white-30);
+	animation: glow 3s ease-in-out infinite alternate;
+}
+
+.lunar-sub-title {
+	background: linear-gradient(30deg, var(--color-title-accent-2) 0%, var(--color-title-accent-2) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	letter-spacing: 0.5px;
+	animation: glow 3s ease-in-out infinite alternate;
+}
+
+/* Lunar Description Styles */
+.lunar-description {
+	color: var(--color-transparent-white-70);
+	font-size: 1.15rem;
+	line-height: 1.7;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 1rem;
+	font-weight: 300;
+}
+
+/* Text Container Spacing */
+.text-center.mb-5 {
+	margin-bottom: 4rem !important;
+	padding: 2rem 0;
+	position: relative;
+	z-index: 1;
+}
+
+/* Glow Animation */
+@keyframes glow {
+	from {
+		text-shadow: 0 0 20px var(--color-accent-glow-1);
+	}
+
+	to {
+		text-shadow: 0 0 25px var(--color-accent-glow-2),
+			0 0 50px var(--color-accent-glow-3);
+	}
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.lunar-title {
+		font-size: 2rem;
+	}
+
+	.lunar-description {
+		font-size: 1rem;
+		padding: 0 0.5rem;
+	}
+}
+
+
+.lunar-social-links {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.lunar-social-link {
+	transition: transform 0.2s ease-in-out;
+	opacity: 0.8;
+}
+
+.lunar-social-link:hover {
+	transform: translateY(-2px);
+	opacity: 1;
+}
+
+@media (max-width: 768px) {
+	.lunar-social-links {
+		justify-content: center;
+	}
+
+	.lunar-links {
+		text-align: center;
+	}
 }
