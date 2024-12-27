@@ -1,29 +1,9 @@
 @import "https://fonts.googleapis.com/css2?family=Megrim&family=Questrial&family=Inter&display=swap";
-@import "./services.css";
 
 * {
 	font-family: "Inter", serif;
 
 }
-
-.service-card {
-
-	font-family: __Inter_1fc7a2, sans-serif;
-	line-height: 1.4;
-	margin: 0;
-	align-items: flex-start;
-	border-radius: 16px;
-	box-shadow: rgba(17, 25, 46, 0.1) 0px 0px 0px 2px inset;
-	background: rgb(249, 250, 254);
-	display: flex;
-	flex-direction: column;
-	gap: 24px;
-	height: 100%;
-	padding: 32px 32px 40px;
-
-}
-
-.logo-png {}
 
 .logo-text {
 	color: rgb(55, 65, 81);
@@ -194,30 +174,151 @@
 	margin: 0;
 }
 
-.service-card-img {
-	width: 100%;
-	height: auto;
-	max-height: 200px;
-	object-fit: contain;
-	background: transparent;
-	padding: 1rem;
-	margin: 0 auto;
-	display: block;
+/* Services section */
+
+.services-section {
+	background: linear-gradient(135deg, #0a1221 0%, #1a2333 100%);
 	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
+	overflow: hidden;
+	color: #fff;
+	min-height: 100vh;
+	padding: 6rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
-	.service-card-img {
-		max-height: 150px;
-		padding: 0.5rem;
+.services-section::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background:
+		radial-gradient(circle at 20% 20%, rgba(79, 172, 254, 0.15) 0%, transparent 35%),
+		radial-gradient(circle at 80% 80%, rgba(0, 242, 254, 0.15) 0%, transparent 35%),
+		radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+	pointer-events: none;
+	animation: spaceGlow 15s ease-in-out infinite;
+}
+
+.btn-lunar-learn-more {
+	background: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	color: #4facfe;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	transition: all 0.3s ease;
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+
+.btn-lunar-learn-more:hover {
+	background: rgba(79, 172, 254, 0.1);
+	border-color: #4facfe;
+	transform: translateX(5px);
+}
+
+@keyframes spaceGlow {
+	0% {
+		opacity: 0.5;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0.5;
 	}
 }
 
-@media screen and (max-width: 480px) {
-	.service-card-img {
-		max-height: 120px;
-		padding: 0.25rem;
+/* Benefits section */
+
+.benefits-section {
+	background: linear-gradient(135deg, #0a1221 0%, #1a2333 100%);
+	position: relative;
+	overflow: hidden;
+	color: #fff;
+	min-height: 100vh;
+	padding: 6rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.benefits-section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background:
+		radial-gradient(circle at 20% 20%, rgba(79, 172, 254, 0.15) 0%, transparent 35%),
+		radial-gradient(circle at 80% 80%, rgba(0, 242, 254, 0.15) 0%, transparent 35%),
+		radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+	pointer-events: none;
+	animation: spaceGlow 15s ease-in-out infinite;
+}
+
+@keyframes spaceGlow {
+	0% {
+		opacity: 0.5;
 	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0.5;
+	}
+}
+
+.lunar-card {
+	background: rgba(255, 255, 255, 0.03) !important;
+	border: 1px solid rgba(255, 255, 255, 0.05) !important;
+	border-radius: 1rem !important;
+	backdrop-filter: blur(10px);
+	transition: all 0.3s ease !important;
+	position: relative !important;
+	overflow: hidden !important;
+}
+
+.lunar-card::before {
+	content: '';
+	position: absolute !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent) !important;
+}
+
+.lunar-card:hover {
+	transform: translateY(-5px) !important;
+	background: rgba(255, 255, 255, 0.05) !important;
+	border-color: rgba(255, 255, 255, 0.1) !important;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2) !important;
+}
+
+.lunar-card-title {
+	color: #fff !important;
+	font-weight: 600 !important;
+}
+
+.lunar-card-title img {
+	filter: drop-shadow(0 0 8px rgba(79, 172, 254, 0.3));
+	transition: transform 0.3s ease;
+}
+
+.lunar-card:hover .lunar-card-title img {
+	transform: scale(1.1);
+}
+
+.lunar-card-text {
+	color: rgba(255, 255, 255, 0.7) !important;
+	line-height: 1.6 !important;
 }
