@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>iTeam</title>
+
+	<link href="css/main.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body data-bs-theme="dark">
+	<header>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark lunar-nav py-3">
+			<div class="container-fluid">
+				<a class="navbar-brand d-flex align-items-center" href="#">
+					<h4 class="font-title logo-text mb-0 moon-glow">Lunar Cloud</h4>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="index.html#services">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+
+		<section id="services-hero" class="hero lunar-hero min-vh-100 d-flex align-items-center">
+			<div class="container py-5 mb-5">
+				<div class="row align-items-center justify-content-center">
+					<div class="col-lg-8 col-md-10 col-sm-12">
+						<div class="hero-content text-center">
+							<h1 class="display-3 fw-bold mb-4 hero-title animate-fade-in">Our Services</h1>
+							<div class="row justify-content-center">
+								<div class="col-md-10">
+									<p class="lead mb-4 hero-text animate-fade-up">
+										Discover our comprehensive suite of cloud solutions designed to power your
+										business. From scalable infrastructure to cutting-edge deployment tools,
+										we provide everything you need to succeed in the cloud.
+									</p>
+								</div>
+							</div>
+							<div class="hero-buttons d-flex justify-content-center gap-3 flex-wrap">
+								<a href="#services" class="btn-lunar-cta text-decoration-none">
+									<span>Explore Services</span>
+								</a>
+								<a href="contact.html" class="btn-lunar-secondary text-decoration-none">
+									<span>Contact Us</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-5">
+					<div class="col-12">
+						<div class="service-preview d-flex justify-content-center gap-4 flex-wrap">
+							<a href="#servers" class="service-card p-4 text-center text-decoration-none text-white">
+								<i class="bi bi-hdd-rack fs-1 mb-3"></i>
+								<h3 class="h5">Server</h3>
+							</a>
+							<a href="#persistent-services" class="service-card p-4 text-center text-decoration-none text-white">
+								<i class="bi bi-database-fill fs-1 mb-3"></i>
+								<h3 class="h5">Persistent</h3>
+							</a>
+							<a href="#kubernetes" class="service-card p-4 text-center text-decoration-none text-white">
+								<i class="bi bi-diagram-3 fs-1 mb-3"></i>
+								<h3 class="h5">Kubernetes</h3>
+							</a>
+							<a href="#management-security" class="service-card p-4 text-center text-decoration-none text-white">
+								<i class="bi bi-shield-check fs-1 mb-3"></i>
+								<h3 class="h5">Management</h3>
+							</a>
+							<a href="#integrations" class="service-card p-4 text-center text-decoration-none text-white">
+								<i class="bi bi-git fs-1 mb-3"></i>
+								<h3 class="h5">Integrations</h3>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a href="#servers" class="scroll-down-btn">
+				<i class="bi bi-chevron-down"></i>
+
+			</a>
+		</section>
+
+
+		<!-- Servers section -->
+		<section id="servers" class="benefits-section lunar-section py-5">
+			<div class="container mb-5">
+				<div class="text-center mb-5">
+					<h2 class="lunar-title">Server Solutions</h2>
+					<p class="lunar-description mx-auto">
+						Empower your applications with our cutting-edge server infrastructure designed for modern cloud computing
+					</p>
+				</div>
+				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-boxes moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">Docker Containers</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Deploy applications quickly and consistently using containerization.
+									Scale with ease and maintain isolation between services.</p>
+								<div class="mt-3">
+									<a class="btn-lunar-learn-more text-decoration-none" href="#docker">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-diagram-3 moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">Kubernetes Orchestration</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Automate deployment, scaling, and management of containerized
+									applications with enterprise-grade orchestration.</p>
+								<div class="mt-3">
+									<a class="btn-lunar-learn-more text-decoration-none" href="#kubernetes">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-lightning moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">Serverless Computing</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Build and run applications without managing servers. Pay only for actual
+									compute time used.</p>
+								<div class="mt-3">
+									<a class="btn-lunar-learn-more text-decoration-none" href="#serverless">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-hdd-rack moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">Virtual Private Servers</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Dedicated virtual machines with full root access. Perfect for custom
+									configurations and traditional hosting.</p>
+								<div class="mt-3">
+									<a class="btn-lunar-learn-more text-decoration-none" href="#vps">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a href="#persistent-services" class="scroll-down-btn">
+				<i class="bi bi-chevron-down"></i>
+			</a>
+		</section>
+
+		<section id="persistent-services" class="benefits-section lunar-section py-5">
+			<div class="container mb-5">
+				<div class="text-center mb-5">
+					<h2 class="lunar-title">Persistent Services</h2>
+					<p class="lunar-description mx-auto">
+						Reliable and scalable storage solutions for all your data needs, from structured databases to large file
+						storage
+					</p>
+				</div>
+				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-database-fill moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">Managed Databases</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Fully managed SQL and NoSQL databases optimized for performance and
+									reliability. Supports PostgreSQL, MongoDB, and Redis.</p>
+								<div class="mt-3">
+									<a class="btn-lunar-learn-more text-decoration-none" href="#databases">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-cloud-arrow-up moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">Object Storage</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Scalable storage for unstructured data with built-in versioning and
+									lifecycle management. Perfect for media files and backups.</p>
+								<div class="mt-3">
+									<a class="btn-lunar-learn-more text-decoration-none" href="#object-storage">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-broadcast moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">WebSocket Service</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Managed WebSocket infrastructure for real-time bidirectional
+									communication. Ideal for chat applications and live updates.</p>
+								<div class="mt-3">
+									<a class="btn-lunar-learn-more text-decoration-none" href="#websocket">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-hdd-network moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">Block Storage</p>
+								</h3>
+								<p class="lunar-card-text mb-0">High-performance block storage volumes for your applications. Easily
+									attachable to virtual machines and containers.</p>
+								<div class="mt-3">
+									<a class="btn-lunar-learn-more text-decoration-none" href="#block-storage">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a href="#management-security" class="scroll-down-btn">
+				<i class="bi bi-chevron-down"></i>
+			</a>
+		</section>
+
+		<section id="management-security" class="benefits-section lunar-section py-5">
+			<div class="container mb-5">
+				<div class="text-center mb-5">
+					<h2 class="lunar-title">Management & Security</h2>
+					<p class="lunar-description mx-auto">
+						Essential tools and services to secure, deliver and optimize your applications in production
+					</p>
+				</div>
+				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-diagram-2 moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">API Gateway</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Manage, secure and route API requests with advanced request handling and
+									authentication.</p>
+								<div class="mt-3">
+									<a class="btn-lunar-learn-more text-decoration-none" href="#api-gateway">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-distribute-horizontal moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">Load Balancer</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Distribute traffic across multiple servers for high availability and
+									optimal performance.</p>
+								<div class="mt-3">
+									<a class="btn-lunar-learn-more text-decoration-none" href="#load-balancer">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-shield-check moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">WAF & DDoS</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Advanced protection against web attacks and DDoS with real-time threat
+									mitigation.</p>
+								<div class="mt-3">
+									<a class="btn-lunar-learn-more text-decoration-none" href="#security">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-speedometer2 moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">CDN</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Global content delivery network for faster access and reduced latency
+									worldwide.</p>
+								<div class="mt-3">
+									<a class="btn-lunar-learn-more text-decoration-none" href="#cdn">Learn More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a href="#kubernetes" class="scroll-down-btn">
+				<i class="bi bi-chevron-down"></i>
+			</a>
+		</section>
+
+
+		<section id="kubernetes" class="benefits-section lunar-section py-5">
+			<div class="container mb-5">
+				<div class="text-center mb-5">
+					<h2 class="lunar-title">Kubernetes Orchestration</h2>
+					<p class="lunar-description mx-auto">
+						Enterprise-grade container orchestration platform for automating deployment, scaling, and management of
+						containerized applications
+					</p>
+				</div>
+				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-diagram-3-fill moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">Automated Scaling</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Automatically scale your applications based on demand. Horizontal and
+									vertical scaling with custom metrics support.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-gear-fill moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">Self-healing</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Automatic container health monitoring and recovery. Replaces failed
+									containers to maintain desired state.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-shield-fill-check moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">Security Controls</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Built-in security policies, network isolation, and role-based access
+									control for your clusters.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-clock-history moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">Zero-downtime Updates</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Rolling updates and rollbacks ensure continuous service availability
+									during deployments.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-graph-up moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">Advanced Monitoring</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Comprehensive metrics, logging, and monitoring integration with popular
+									observability tools.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-cloud-check-fill moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">Managed Service</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Fully managed Kubernetes service with automatic updates, backups, and
+									24/7 support.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a href="#integrations" class="scroll-down-btn">
+				<i class="bi bi-chevron-down"></i>
+			</a>
+		</section>
+
+
+		<section id="integrations" class="benefits-section lunar-section py-5">
+			<div class="container mb-5">
+				<div class="text-center mb-5">
+					<h2 class="lunar-title">Integrations</h2>
+					<p class="lunar-description mx-auto">
+						Connect and extend your cloud infrastructure with our wide range of supported integrations and tools
+					</p>
+				</div>
+				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-git moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">Version Control</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Seamless integration with GitHub, GitLab, and Bitbucket for automated
+									deployments and version control.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-graph-up-arrow moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">Monitoring</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Integration with popular monitoring tools like Prometheus, Grafana, and
+									DataDog for comprehensive insights.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-shield-lock moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">Identity Providers</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Support for OAuth, SAML, and custom identity providers for secure
+									authentication and authorization.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-clock-history moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">CI/CD Tools</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Integrate with Jenkins, CircleCI, and other CI/CD platforms for
+									automated testing and deployment.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-terminal moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">CLI Tools</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Command-line tools and SDKs for major programming languages to manage
+									resources programmatically.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="h-100">
+							<div class="card-body lunar-card p-4">
+								<h3 class="lunar-card-title h5 mb-3 d-flex align-items-center">
+									<i class="bi bi-boxes moon-glow me-3" style="font-size: 2rem;"></i>
+									<p class="mb-0">Container Registries</p>
+								</h3>
+								<p class="lunar-card-text mb-0">Support for Docker Hub, Amazon ECR, and private registries for container
+									image management.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a href="#" class="scroll-down-btn">
+				<i class="bi bi-chevron-up"></i>
+			</a>
+		</section>
+
+	</main>
+
+	<footer class="lunar-footer py-5">
+		<div class="container">
+			<div class="row gy-4">
+				<!-- Logo and Copyright -->
+				<div class="col-md-4">
+					<div class="d-flex align-items-center mb-3 mb-md-0 justify-content-center justify-content-md-start">
+						<h4 class="font-title logo-text mb-0 moon-glow me-2">Lunar Cloud</h4>
+						<p class="lunar-text mb-0">&copy; 2024</p>
+					</div>
+				</div>
+				<!-- Links -->
+				<div class="col-md-4">
+					<div class="lunar-links text-center">
+						<a href="#" class="lunar-link me-4">Privacy</a>
+						<a href="#" class="lunar-link me-4">Terms</a>
+						<a href="#" class="lunar-link">Docs</a>
+					</div>
+				</div>
+				<!-- Social Icons -->
+				<div class="col-md-4">
+					<div class="lunar-social-links text-white">
+						<a href="https://github.com" class="lunar-social-link me-3 text-white" target="_blank" aria-label="GitHub">
+							<i class="bi bi-github fs-4"></i>
+						</a>
+						<a href="https://twitter.com" class="lunar-social-link me-3 text-white" target="_blank"
+							aria-label="Twitter">
+							<i class="bi bi-twitter-x fs-4"></i>
+						</a>
+						<a href="https://linkedin.com" class="lunar-social-link me-3 text-white" target="_blank"
+							aria-label="LinkedIn">
+							<i class="bi bi-linkedin fs-4"></i>
+						</a>
+						<a href="https://discord.com" class="lunar-social-link me-3 text-white" target="_blank"
+							aria-label="Discord">
+							<i class="bi bi-discord fs-4"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+
+</html>

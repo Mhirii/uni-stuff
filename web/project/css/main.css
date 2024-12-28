@@ -666,3 +666,61 @@ body {
 	height: 100%;
 	background: radial-gradient(circle at 50% 50%, rgba(13, 17, 23, 0.1) 0%, var(--color-dark-1) 100%);
 }
+
+.scroll-down-btn {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 40px;
+	height: 40px;
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	animation: float 3s infinite, fadeInOut 6s ease-in-out infinite;
+}
+
+.scroll-down-btn:hover {
+	background: rgba(255, 255, 255, 0.2);
+	transform: translateX(-50%) translateY(-5px);
+}
+
+.scroll-down-btn i {
+	font-size: 20px;
+}
+
+@keyframes float {
+
+	0%,
+	100% {
+		transform: translateX(-50%) translateY(0);
+	}
+
+	50% {
+		transform: translateX(-50%) translateY(-10px);
+	}
+
+}
+
+@keyframes fadeInOut {
+	0% {
+		opacity: 0.9;
+	}
+
+	30% {
+		opacity: 0.5;
+	}
+
+	60% {
+		opacity: 0.5;
+	}
+
+	100% {
+		opacity: 0.9;
+	}
+}
